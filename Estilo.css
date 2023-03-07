@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Estilo header universal*/
+/*
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#contenedor_sup_bar {
+    display: block;
+    position: static;
+    background-color: grey;
+    width: 100%;
+    height: 50px;
+}
+
+nav div {
+    display: inline-block;
+}
+
+.contenedor_buscar {
+    height: 100%;
+    width: 300px;
+    border-right: 2px solid black;
+}
+
+.barra_buscar input {
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.barra_buscar button {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.contenedor_lista {
+    width: 100%;
+    height: 40px;
+    background-color: #DEA36C;
+    text-align: center;
+}
+
+
+.contenedor_buscar button{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.lista_des a{
+    padding: 0 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/* ------------------------------ */
+
+/*Main Index*/
+/*
+.main_titulo h1 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+}
+*/
+
+/*Imagenes Index*/
+/*
+.contenedor_main {
+    display: inline-block;
+    
+}
+
+.contenedor_main div img {
+    border: 2px solid black;
+}
+
+.main_imagen_1 img{
+    width: 300px;
+    height: 200px;
+}
+*/
+/* -------------------- */
+
+
+/*Footer Universal*/
+/*
+div form h3 {
+    font-size: 20px;
+    font-style:italic;
+}
+.faq li{
+    display: block;
+}
+*/
+
+/*----------------------------------------*/
+
+/*Iniciar sesión*/
+/*
+#login {
+    display: inline-block;
+}
+
+.login {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.login input{
+    display: block;
+    margin-bottom: 15px;
+}
+*/
+/* -------------------- */
+
+/*Main Contactos*/
+/*
+#contacto section{
+    display: block;
+}
+
+.contacto {
+    display: inline-block;
+}
+
+fieldset {
+    padding: 10px;
+    display: inline-block;
+}
+
+.label {
+    padding: 2px;
+}
+
+
+h4 {
+    display: inline;
+}
+*/
+
+/* -------------------- */
+
+
+/*Main Quienes somos*/
+/*
+.titulo-quienessomos h1 {
+    text-decoration: underline ;
+}
+
+
+.nosotros_img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid grey;
+}
+
+.nosotros_p {
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.nosotros {
+    display: inline-block;
+    width: 220px;
+    height: 320px;
+    padding: 15px;
+}
+*/
+
+/* -------------------- */
+
+
+/*Main Productos*/
+/*
+.productos_img img {
+    display: inline-block;
+    border: 2px solid slateblue;
+    width: 250px;
+    height: 250px;
+    margin: 5px 10px;
+}
+
+.productos_img p {
+    display: inline-block;
+}
+
+#productos {
+    padding: 5px;
+}
+
+.lista_fragancias {
+    border: 1px solid darkblue;
+    border-style: double;
+    width: 100px;
+    margin-top: 10px;
+}
+
+#fragancias {
+    padding: 10px;
+}
+*/
+
+/* -------------------- */
+
+/*aside universal provisional*/
+/*
+#aside {
+    text-align: center;
+    width: 200px;
+    height: 550px;
+    border: .5px solid red;
+}
+
+aside div p {
+    display: inline-block;
+    position: relative;
+}
+*/
