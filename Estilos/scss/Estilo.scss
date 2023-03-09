@@ -65,7 +65,11 @@
             }
 
             #lista {
-                
+                display: inline-block;
+                .lista_des {
+                    display: flex;
+                    list-style-type: none;
+                }
             }
         }
     }

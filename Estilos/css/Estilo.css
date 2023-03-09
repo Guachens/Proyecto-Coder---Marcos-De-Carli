@@ -55,6 +55,13 @@
   display: flex;
   justify-content: center;
 }
+#index_contenedor header .header #lista {
+  display: inline-block;
+}
+#index_contenedor header .header #lista .lista_des {
+  display: flex;
+  list-style-type: none;
+}
 #index_contenedor main {
   grid-area: productos;
   background-color: bisque;
