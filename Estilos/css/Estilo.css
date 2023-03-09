@@ -5,7 +5,7 @@
 }
 
 #index_contenedor {
-  min-height: 100vh;
+  min-height: 150vh;
   width: 100%;
   display: grid;
   grid-template-areas: "header    header    header" "productos productos aside" "productos productos aside" "footer    footer    footer";
@@ -14,10 +14,7 @@
 }
 #index_contenedor header {
   grid-area: header;
-}
-#index_contenedor header .header {
-  display: grid;
-  grid-template-rows: 40px 1fr 100px;
+  display: block;
 }
 #index_contenedor header .header .contenedor_sup_bar {
   border: solid 1px black;

@@ -6,7 +6,7 @@
 
 
 #index_contenedor {
-    min-height: 100vh;
+    min-height: 150vh;
     width: 100%;
     display: grid;
     grid-template-areas:
@@ -20,61 +20,59 @@
 
     header {
         grid-area: header;
-        .header{
-            display: grid;
-            grid-template-rows: 40px 1fr 100px;
-        .contenedor_sup_bar {
-            border: solid 1px black;
-            margin-bottom: 5px;
-            padding: 2px;
-            display: block;
-            .contenedor_sup_bar__2{
-                display: flex;
-                justify-content: space-between;
-                .contenedor_buscar {
-                    border-right: solid 2px black;
-                    display: grid;
-                    padding-right: 10px ;
-                }
-    
-                .contenedor_info {
+        display: block;
+
+        .header {
+            
+            .contenedor_sup_bar {
+                border: solid 1px black;
+                margin-bottom: 5px;
+                padding: 2px;
+                display: block;
+
+                .contenedor_sup_bar__2 {
                     display: flex;
-                    text-align: center;
-                }
-    
-                .contenedor_sesion {
-                    border-left: solid 2px black;
-                    margin-right: 50px;
-                    padding-left: 50px;
-                    display: flex;
+                    justify-content: space-between;
+
+                    .contenedor_buscar {
+                        border-right: solid 2px black;
+                        display: grid;
+                        padding-right: 10px;
+                    }
+
+                    .contenedor_info {
+                        display: flex;
+                        text-align: center;
+                    }
+
+                    .contenedor_sesion {
+                        border-left: solid 2px black;
+                        margin-right: 50px;
+                        padding-left: 50px;
+                        display: flex;
+                    }
                 }
             }
-        }
 
-        .contenedor_logo{
-            display: flex;
-            
-        }
+            .contenedor_logo {
+                display: flex;
 
-        #lista{
-            text-decoration: none;
+            }
+
+            #lista {
+                text-decoration: none;
+            }
         }
     }
-    }
 
 
-    section{
+
+    section {
         grid-area: productos;
-        .contenedor_main {
-
-            
-        }
-
     }
- 
+
 
     aside {
-
         grid-area: aside;
     }
 
