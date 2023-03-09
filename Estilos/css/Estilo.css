@@ -1,3 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+#index_contenedor {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header    header    header" "productos productos aside" "productos productos aside" "footer    footer    footer";
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 500px 25% 25% 350px;
+}
+#index_contenedor header {
+  grid-area: header;
+}
+#index_contenedor header .header {
+  display: grid;
+  grid-template-rows: 40px 1fr 100px;
+}
+#index_contenedor header .header .contenedor_sup_bar {
+  border: solid 1px black;
+  margin-bottom: 5px;
+  padding: 2px;
+  display: block;
+}
+#index_contenedor header .header .contenedor_sup_bar .contenedor_sup_bar__2 {
+  display: flex;
+  justify-content: space-between;
+}
+#index_contenedor header .header .contenedor_sup_bar .contenedor_sup_bar__2 .contenedor_buscar {
+  border-right: solid 2px black;
+  display: grid;
+  padding-right: 10px;
+}
+#index_contenedor header .header .contenedor_sup_bar .contenedor_sup_bar__2 .contenedor_info {
+  display: flex;
+  text-align: center;
+}
+#index_contenedor header .header .contenedor_sup_bar .contenedor_sup_bar__2 .contenedor_sesion {
+  border-left: solid 2px black;
+  margin-right: 50px;
+  padding-left: 50px;
+  display: flex;
+}
+#index_contenedor header .header .contenedor_logo {
+  display: flex;
+}
+#index_contenedor header .header #lista {
+  text-decoration: none;
+}
+#index_contenedor section {
+  grid-area: productos;
+}
+#index_contenedor aside {
+  grid-area: aside;
+}
+#index_contenedor footer {
+  grid-area: footer;
+}
+#index_contenedor .main_imagen_1 a img {
+  display: grid;
+  width: 500px;
+  height: 250px;
+}
 
 /*# sourceMappingURL=Estilo.css.map */
