@@ -7,7 +7,6 @@
 /*Contenedos de página - Grid*/
 #index_contenedor {
     min-height: 150vh;
-    border: solid 2px black;
     background-color: whitesmoke;
     display: grid;
     grid-template-areas:
@@ -32,7 +31,7 @@
             .contenedor_sup_bar {
                 border: solid 1px black;
                 margin-bottom: 5px;
-                padding: 2px;
+                padding: 2px 0px;
                 display: block;
                 height: fit-content;
 
@@ -141,15 +140,17 @@
     footer {
         grid-area: footer;
         background-color: lightcoral;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+
+        .redes {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
     }
 
     .main_imagen_1 {
         a {
             img {
-                display: grid;
                 width: 500px;
                 height: 250px;
             }
