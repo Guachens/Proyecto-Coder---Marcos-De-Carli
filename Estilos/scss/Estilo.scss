@@ -24,16 +24,17 @@
     header {
         grid-area: header;
         display: block;
-        background-color: aqua;
+        background-color: rgb(197, 164, 133);
         .header {
             display: grid;
-            border: soiid 1px black;
-            
+            height: 100%;    
+            align-content: space-between;
             .contenedor_sup_bar {
                 border: solid 1px black;
                 margin-bottom: 5px;
                 padding: 2px;
                 display: block;
+                height: fit-content;
 
                 .contenedor_sup_bar__2 {
                     display: flex;
@@ -62,13 +63,34 @@
             .contenedor_logo {
                 display: flex;
                 justify-content: center;
+                align-content: center;
+                flex-wrap: wrap;;
             }
 
             #lista {
-                display: inline-block;
+                background-color: rgb(0, 0, 0, .5);
+                height: 100%;
+                width: 100vw;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
                 .lista_des {
-                    display: flex;
                     list-style-type: none;
+                    display: flex;
+                    margin: revert;
+                }
+
+                .lista_des li {
+                    border-radius: 5px;
+                    margin: 0 75px;
+                    text-align: center;
+                    
+                }
+
+                .lista_des li a {
+                    text-decoration: none;
+                    color: white;
                 }
             }
         }
@@ -79,13 +101,41 @@
     main {
         grid-area: productos;
         background-color: bisque;
-        display: flex;
+       
+        section {
+            height: 100%;
+        }
+
+        .contenedor_main{
+            height: inherit;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% auto;
+            justify-items: center;
+            align-items: center;
+        }
+
+
+        .contenedor_main img {
+            height: auto;
+            width: auto;
+            max-height: 200px;
+            max-width: 200px;
+            border: solid 2px black;
+            display: flex;
+            
+        }
     }
+
+    
 
 
     aside {
         grid-area: aside;
         background-color: lightblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     footer {
