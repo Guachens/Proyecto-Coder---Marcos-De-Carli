@@ -24,12 +24,19 @@ header {
   grid-area: header;
 }
 
+.header {
+  display: grid;
+  justify-items: center;
+  align-content: space-between;
+}
+
 .contenedor_sup_bar {
   display: flex;
   width: 100vw;
   height: 50px;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid black
 }
 
 .contenedor_buscar {
@@ -37,22 +44,29 @@ header {
   align-self: center;
   justify-content: space-between;
   padding: 2px 10px;
+  border-right: 1.5px solid black;
+  padding-right: 50px;
+}
+
+.contenedor_buscar button {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
 }
 
 /*----------Revisar----------------*/
-.barra_buscar button i {
-  
-  width: 25px;
-}
-
-.barra_buscar button {
-  
+.barra_buscar button {  
   width: 35px;
   height: 35px;
 }
 /*------------------------------------------*/
 .contenedor_sesion {
+  display: flex;
+  height: 80%;
+  align-items: center;
   margin-right: 50px;
+  border-left: 1.5px solid black;
+  padding-left: 50px;
 }
 
 .contenedor_sesion .sesion a {
@@ -73,20 +87,27 @@ header {
   background-color: rgb(235, 205, 167);
 }
 
-ul {
+.lista_des {
   margin: 0;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
 
-ul li a {
+.lista_des li a {
   text-decoration: none;
 }
 
 .main_index {
   display: grid;
   grid-area: productos;
+}
+
+.contenedor_main div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 15px;
 }
 
 img {
@@ -96,12 +117,56 @@ img {
   max-height: 300px;
 }
 
+.main_imagen_2 {
+  margin-right: -45px;
+}
+
+.parrafo_img {
+  height: 150px;
+  width: 350px;
+}
+
 .aside_index {
   display: grid;
   grid-area: aside;
+  justify-items: center;
+  align-items: center;
+}
+
+.aside {
+  display: flex;
+  height: 90%;
+  width: 90%;
+  background-color: rgb(209, 174, 122);
+  justify-content: center;
+  align-items: center;
 }
 
 .footer_index {
   display: grid;
   grid-area: footer;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  background-color: beige;
+}
+
+
+.redes_gen form, .faq_gen {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.redes_gen form h3 {
+  margin-bottom: 20px;
+}
+
+.redes li, .faq li{
+  margin: 10px;
+}
+
+
+.footer_index ul, .footer_index ul li a {
+  text-decoration: none;
+  list-style-type: none;
 }
