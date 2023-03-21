@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,16 +13,18 @@
   display: grid;
   grid-template-columns: 300px 1fr 300px;
   grid-template-rows: 400px 1fr 300px;
-  grid-template-areas: 
-  "header    header    header"
-  "productos productos aside"
-  "footer    footer    footer";
+  grid-template-areas:
+    "header    header    header"
+    "productos productos aside"
+    "footer    footer    footer";
 }
 
 header {
   display: grid;
   grid-area: header;
+  background-color: #dcbc8b;
 }
+
 
 .header {
   display: grid;
@@ -30,14 +32,16 @@ header {
   align-content: space-between;
 }
 
+
 .contenedor_sup_bar {
   display: flex;
   width: 100vw;
   height: 50px;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid black
-}
+  border: 2px solid black;
+  background-color: #c3a47b;
+ }
 
 .contenedor_buscar {
   display: flex;
@@ -55,11 +59,26 @@ header {
 }
 
 /*----------Revisar----------------*/
-.barra_buscar button {  
+.barra_buscar button {
   width: 35px;
   height: 35px;
 }
+
 /*------------------------------------------*/
+.contenedor_logo{
+  display: flex;
+  align-items: center;
+}
+
+.barras_menu {
+  color: #000;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+}
+
 .contenedor_sesion {
   display: flex;
   height: 80%;
@@ -76,6 +95,7 @@ header {
 
 #lista {
   height: fit-content;
+  background-color: #c3a47b;
 }
 
 
@@ -84,7 +104,6 @@ header {
   align-items: center;
   height: 65px;
   width: 100vw;
-  background-color: rgb(235, 205, 167);
 }
 
 .lista_des {
@@ -110,7 +129,7 @@ header {
   padding-top: 15px;
 }
 
-img {
+.img a img {
   height: auto;
   width: auto;
   max-width: 350px;
@@ -152,7 +171,8 @@ img {
 }
 
 
-.redes_gen form, .faq_gen {
+.redes_gen form,
+.faq_gen {
   display: grid;
   grid-template-rows: auto auto;
 }
@@ -161,12 +181,31 @@ img {
   margin-bottom: 20px;
 }
 
-.redes li, .faq li{
+.redes li,
+.faq li {
   margin: 10px;
 }
 
 
-.footer_index ul, .footer_index ul li a {
+.footer_index ul,
+.footer_index ul li a {
   text-decoration: none;
   list-style-type: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .body_index {
+    grid-template-rows: 250px 1fr 300px;
+  }
+
+  .header {
+    display: grid;
+    justify-items: center;
+  }
+
+  .contenedor_sup_bar {
+    display: none;
+  }
+
 }
