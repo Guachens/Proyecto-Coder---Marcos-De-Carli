@@ -11,16 +11,20 @@
     <title>Proyecto</title>
 </head>
 
-<body>
+<body class="body_contactos">
     
     <script src="../Bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <header>
-        <nav id="contenedor_sup_bar">
+    <header class="header">
+
+        <nav class="contenedor_sup_bar">
+
             <div class="contenedor_buscar">
                 <form action="" method="get" class="barra_buscar">
                     <input type="text" placeholder="Buscar" name="q">
-                    <button type="submit">B</button>
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
 
                     <button type="submit"><a href=""></a>C</button>
                 </form>
@@ -39,6 +43,14 @@
             </div>
         </nav>
 
+        <div class="contenedor_menu">
+
+            <button class="barras_menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+
         <div class="contenedor_logo">
             <div class="logo">
                 <img src="../Imagenes/dof logo.jpg" alt="">
@@ -46,6 +58,7 @@
         </div>
 
         <section id="lista">
+
             <div class="contenedor_lista">
                 <nav>
                     <ul class="lista_des">
@@ -60,11 +73,14 @@
 
     </header>
 
-    <main>
+    <main class="main_contactos">
+
         <div id="contacto">
+
         <section class="contacto">
+
             <form action="">
-                <fieldset class="contacto">
+                <fieldset class="">
                     <legend>Ingresa tus datos de contacto</legend>
 
                     <div class="label">
@@ -103,21 +119,25 @@
 
                     <a href="https://www.instagram.com/dof.aromatizantes">Instagram</a>
                     <a href="">Whatsapp</a>
-                    <div class="contacto_div">
-                        <h4>Nuestro punto de retiro:</h4> <br>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.3122879513744!2d-58.462232084236376!3d-34.62154776594984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca22734190fd%3A0x4950e7907d6775c5!2sDOF%20Aromatizantes!5e0!3m2!1ses!2sar!4v1675915904048!5m2!1ses!2sar"
-                            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                    
                 </fieldset>
             </form>
 
         </section>
+
+        <section class="retiro">
+            <div class="contacto_div">
+                <h4>Nuestro punto de retiro:</h4> <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.3122879513744!2d-58.462232084236376!3d-34.62154776594984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca22734190fd%3A0x4950e7907d6775c5!2sDOF%20Aromatizantes!5e0!3m2!1ses!2sar!4v1675915904048!5m2!1ses!2sar"
+                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
         </div>
     </main>
 
-    <footer>
+    <footer class="footer">
 
         <div>
             <form action="">

@@ -128,7 +128,7 @@ header {
   text-decoration: none;
 }
 
-/* ------------- Estilo del Main ------------ */
+/* ------------- Estilo del Main Index ------------ */
 
 .main_index {
   display: grid;
@@ -137,14 +137,14 @@ header {
   justify-content: start;
 }
 
-.contenedor_main{
+.contenedor_main {
   display: grid;
   width: 95%;
   margin: auto;
   grid-gap: 30px;
 }
 
-.contenedor_main > div {
+.contenedor_main>div {
   border: 2px solid rgb(0, 0, 0, .5);
   padding: 5px 10px;
 }
@@ -187,7 +187,9 @@ header {
   align-items: center;
 }
 
-.footer_index {
+/* -------------------- Estilo del Footer ------------------- */
+
+.footer {
   display: grid;
   grid-area: footer;
   grid-template-columns: auto auto auto;
@@ -201,6 +203,10 @@ header {
 .faq_gen {
   display: grid;
   grid-template-rows: auto auto;
+}
+
+.faq_gen h2 {
+  margin-left: 20px;
 }
 
 .redes_gen form h3 {
@@ -229,10 +235,10 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px 1fr 150px 200px;
     grid-template-areas:
-        "header header header"
-        "productos productos productos"
-        "aside aside aside"
-        "footer footer footer";
+      "header header header"
+      "productos productos productos"
+      "aside aside aside"
+      "footer footer footer";
   }
 
   .header {
@@ -264,7 +270,7 @@ header {
     background-color: #886e4b;
   }
 
-  .barras_menu:active {    
+  .barras_menu:active {
     background-color: #886e4b;
   }
 
@@ -283,4 +289,48 @@ header {
   .aside_index {
     padding: 0;
   }
+}
+
+
+/* --------------------- Contactos --------------------------- */
+
+.body_contactos {
+  height: 200vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 400px 1fr 300px;
+  grid-template-areas:
+    "header      header"
+    "formularios formularios"
+    "footer      footer";
+}
+
+.main_contactos {
+  grid-area: formularios;
+}
+
+#contacto {
+  display: grid;
+  justify-items: center;
+  gap: 100px;
+  margin-top: 50px;;
+}
+
+.contacto form {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.contacto fieldset {
+  display: grid;
+  gap: 5px;
+}
+
+legend {
+  text-decoration: underline;
+}
+
+.label {
+  
 }
