@@ -227,7 +227,7 @@ header {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 850px 150px 200px;
+    grid-template-rows: 300px 1fr 150px 200px;
     grid-template-areas:
         "header header header"
         "productos productos productos"
@@ -268,9 +268,19 @@ header {
     background-color: #886e4b;
   }
 
-  .main_index {
-    display: grid;
+  .contenedor_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
+  .img {
+    display: flex;
+    flex-flow: column;
+    grid-gap: 15px;
+  }
 
+  .aside_index {
+    padding: 0;
+  }
 }
