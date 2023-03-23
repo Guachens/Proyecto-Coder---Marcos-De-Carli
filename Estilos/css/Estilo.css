@@ -5,8 +5,6 @@
 }
 
 
-/* Estilo del Header */
-
 .body_index {
   height: 200vh;
   width: 100%;
@@ -18,6 +16,9 @@
     "productos productos aside"
     "footer    footer    footer";
 }
+
+
+/* Estilo del Header */
 
 header {
   display: grid;
@@ -127,27 +128,39 @@ header {
   text-decoration: none;
 }
 
+/* ------------- Estilo del Main ------------ */
+
 .main_index {
   display: grid;
   grid-area: productos;
+  padding: 50px 0;
+  justify-content: start;
 }
 
-.contenedor_main div {
+.contenedor_main{
+  display: grid;
+  width: 95%;
+  margin: auto;
+  grid-gap: 30px;
+}
+
+.contenedor_main > div {
+  border: 2px solid rgb(0, 0, 0, .5);
+  padding: 5px 10px;
+}
+
+.img {
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  padding-top: 15px;
+  align-items: center;
+  grid-gap: 100px;
 }
 
-.img a img {
-  height: auto;
-  width: auto;
-  max-width: 350px;
-  max-height: 300px;
-}
-
-.main_imagen_2 {
-  margin-right: -45px;
+.contenedor_main img {
+  width: 400px;
+  vertical-align: top;
+  height: 300px;
+  object-fit: cover;
 }
 
 .parrafo_img {
@@ -155,11 +168,14 @@ header {
   width: 350px;
 }
 
+/* -------------------- Estilo del Aside ------------------- */
+
 .aside_index {
   display: grid;
   grid-area: aside;
   justify-items: center;
   align-items: center;
+  padding: 50px 0;
 }
 
 .aside {
@@ -203,8 +219,9 @@ header {
   list-style-type: none;
 }
 
+/* Responsive Index */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .body_index {
     height: 150vh;
     width: 100%;
@@ -243,7 +260,7 @@ header {
     padding: 10px 10px;
   }
 
-  .barras_menu:checked {
+  .barras_menu:hover {
     background-color: #886e4b;
   }
 
@@ -255,32 +272,5 @@ header {
     display: grid;
   }
 
-  main section {
-    display: grid;
-    position: relative;
-  }
 
-  .contenedor_main div {
-    display: block;
-    position: absolute;
-    }
-
-  .img {
-    display: block;
-    flex-flow: column;
-    position: absolute;
-  }
-
-  .main_imagen_2 {
-    right: 0;
-  }
-
-  .main_imagen_3{
-    bottom: 0;
-  }
-
-  .main_imagen_4 {
-    bottom: 0;
-    right: 0;
-  }
 }
