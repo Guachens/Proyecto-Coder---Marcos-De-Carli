@@ -308,13 +308,22 @@ header {
 
 .main_contactos {
   grid-area: formularios;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #contacto {
-  display: grid;
-  justify-items: center;
-  gap: 100px;
-  margin-top: 50px;;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  justify-content: space-around;
+}
+
+.contacto{
+  width: 400px;
+  height: 200px;
 }
 
 .contacto form {
@@ -324,13 +333,26 @@ header {
 
 .contacto fieldset {
   display: grid;
-  gap: 5px;
-}
-
-legend {
-  text-decoration: underline;
+  gap: 10px;
+  padding: 10px;
 }
 
 .label {
-  
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto a {
+  display: block;
+  margin: 10px 0;
+}
+
+.contacto legend {
+  text-decoration: underline;
+}
+
+
+.retiro {
+  display: flex;
+  justify-content: center;
 }
