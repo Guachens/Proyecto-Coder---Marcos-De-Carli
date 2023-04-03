@@ -46,8 +46,6 @@ header {
 
 .contenedor_buscar {
   display: flex;
-  align-self: center;
-  justify-content: space-between;
   padding: 2px 10px;
   border-right: 1.5px solid black;
   padding-right: 50px;
@@ -355,4 +353,5 @@ header {
 .retiro {
   display: flex;
   justify-content: center;
+  margin-top: 80px;
 }
