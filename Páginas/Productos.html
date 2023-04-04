@@ -11,20 +11,26 @@
     <title>Proyecto</title>
 </head>
 
-<body>
+<body class="body_productos">
     
     <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <header>
-        <nav id="contenedor_sup_bar">
+    <header class="header">
+
+        <nav class="contenedor_sup_bar">
+
             <div class="contenedor_buscar">
                 <form action="" method="get" class="barra_buscar">
-                    <input type="text" placeholder="Buscar" name="q">
-                    <button type="submit">B</button>
 
-                    <button type="submit"><a href=""></a>C</button>
+                    <input type="text" placeholder="Buscar" name="q" class="">
+                    
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    
                 </form>
 
+                <button type="submit"><a href=""></a><i class="fas fa-solid fa-cart-arrow-down"></i></button>
 
             </div>
 
@@ -39,13 +45,22 @@
             </div>
         </nav>
 
+        <div class="contenedor_menu">
+
+            <button class="barras_menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+
         <div class="contenedor_logo">
             <div class="logo">
-                <img src="../Imagenes/dof logo.jpg" alt="">
+                <a href="/Index.html"><img src="../Imagenes/dof logo.jpg" alt=""></a>
             </div>
         </div>
 
         <section id="lista">
+
             <div class="contenedor_lista">
                 <nav>
                     <ul class="lista_des">
@@ -117,7 +132,7 @@
         </div>
     </aside>
 
-    <footer>
+    <footer class="footer">
 
         <div>
             <form action="">

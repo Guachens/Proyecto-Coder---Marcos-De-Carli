@@ -20,15 +20,10 @@
 
 /* Estilo del Header */
 
-header {
+.header {
   display: grid;
   grid-area: header;
   background-color: #dcbc8b;
-}
-
-
-.header {
-  display: grid;
   justify-items: center;
   align-content: space-between;
 }
@@ -359,7 +354,7 @@ header {
   justify-content: space-around;
 }
 
-.contacto{
+.contacto {
   width: 400px;
   height: 200px;
 }
@@ -394,4 +389,36 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 80px;
+}
+
+
+
+
+/* ----------------- Productos ------------------ */
+
+.body_productos {
+  height: 200vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 400px 1fr 300px;
+  grid-template-areas:
+    "header      header"
+    "formularios formularios"
+    "footer      footer";
+
+}
+
+/* ----------------- Quienes Somos ---------------*/
+
+.body_qs {
+  height: 200vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 400px 1fr 300px;
+  grid-template-areas:
+    "header      header"
+    "formularios formularios"
+    "footer      footer";
 }
