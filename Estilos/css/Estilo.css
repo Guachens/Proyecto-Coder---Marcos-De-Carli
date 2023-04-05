@@ -114,12 +114,6 @@
   text-decoration: none;
 }
 
-.contenedor_menu {
-  display: none;
-  width: 100%;
-
-}
-
 .barras_menu {
   color: #000;
   background: none;
@@ -161,6 +155,9 @@
   text-decoration: none;
 }
 
+.nav {
+  display: none;
+}
 /* ------------- Estilo del Main Index ------------ */
 
 .main_index {
@@ -274,10 +271,7 @@
       "footer footer footer";
   }
 
-  .header {
-    display: grid;
-    justify-items: center;
-  }
+  /*Responsive header general*/
 
   .contenedor_sup_bar {
     display: none;
@@ -287,26 +281,12 @@
     display: none;
   }
 
-  .contenedor_menu {
-    display: flex;
-  }
+  
 
-  .barras_menu {
-    display: flex;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 10px;
-    padding: 10px 10px;
-  }
 
-  .barras_menu:hover {
-    background-color: #886e4b;
-  }
+  /* --------------------------------- */
 
-  .barras_menu:active {
-    background-color: #886e4b;
-  }
-
+  
   .contenedor_main {
     display: flex;
     flex-wrap: wrap;
