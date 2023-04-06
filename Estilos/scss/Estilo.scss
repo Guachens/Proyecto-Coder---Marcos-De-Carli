@@ -24,10 +24,12 @@
         grid-area: header;
         display: block;
         background-color: rgb(197, 164, 133);
+
         .header {
             display: grid;
             height: 100%;    
             align-content: space-between;
+            
             .contenedor_sup_bar {
                 border: solid 1px black;
                 margin-bottom: 5px;
