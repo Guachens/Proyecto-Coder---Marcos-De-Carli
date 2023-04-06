@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: linear-gradient(#dcbc8b, #5c4930);
+  background-size: cover;
+  min-height: 500px;
+  height: 100%;
+}
+
 
 .body_index {
-  height: 200vh;
   width: 100%;
   display: grid;
   grid-template-columns: 300px 1fr 300px;
@@ -261,10 +267,8 @@
 
 @media screen and (max-width: 1200px) {
   .body_index {
-    height: 150vh;
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 300px 1fr 150px 200px;
     grid-template-areas:
       "header header header"
@@ -280,48 +284,41 @@
     display: none;
   }
 
-  .contenedor_lista {
+  .contenedor_lista, #lista {
     display: none;
   }
 
-  .logo {
+  .contenedor_logo {
     display: none;
   }
 
   .contenedor {
     margin: 0 auto;
-    width: 90%;
+    width: 90vw;
     max-width: 1200px;
     overflow: hidden;
   }
 
   .header {
-    background: content-box;
-  }
-
-  body {
-    background-image: linear-gradient(#dcbc8b, #5c4930);
-    background-size: cover;
-    min-height: 500px;
-    height: 200vh;
-    color: #fff;
-  }
+    display: none;
+   }
 
   .nav {
     --state-close: scale(0);
     --state-hamb: scale(1);
+    --state-menu: translate(-100%);
 
     padding: 40px 0;
     display: grid;
-    justify-content: space-between;
-    align-items: center;
+    height: fit-content;
     grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    z-index: 100; 
   }
 
   .nav_logo {
     width: 100px;
     height: 100px;
-    z-index: 10; 
   }
 
   .nav_hamb,
@@ -333,6 +330,7 @@
   }
 
   .nav:target {
+    --state-menu: translate(0);
     --state-close: scale(1);
     --state-hamb: scale(0);
   }
@@ -350,7 +348,7 @@
   }
 
   .nav_links {
-    background-color: #000;
+    background-color: #dcbc8b;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -361,6 +359,10 @@
     align-content: center;
     gap: 2em;
     padding-left: 5%;
+    height: 100vh;
+
+    transform: var(--state-menu);
+    transition: .3s transform;
   }
 
   .nav_item {
@@ -368,7 +370,7 @@
   }
 
   .nav_link {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-size: 1.2rem;
     letter-spacing: 2px;
@@ -396,13 +398,14 @@
 }
 
 
+/* ------------- Final del Responsive ------------ */
+
 /* --------------------- Contactos --------------------------- */
 
 .body_contactos {
-  height: 200vh;
   width: 100%;
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: auto;
   grid-template-rows: 400px 1fr 300px;
   grid-template-areas:
     "header      header"
@@ -468,7 +471,6 @@
 /* ----------------- Productos ------------------ */
 
 .body_productos {
-  height: 200vh;
   width: 100%;
   display: grid;
   grid-template-columns: 50% auto;
@@ -483,7 +485,6 @@
 /* ----------------- Quienes Somos ---------------*/
 
 .body_qs {
-  height: 200vh;
   width: 100%;
   display: grid;
   grid-template-columns: 50% auto;
