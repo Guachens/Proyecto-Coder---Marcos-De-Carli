@@ -6,25 +6,28 @@
 
 body {
     .nav {
-        display:none;
+        display: none;
+        position: absolute; /**/
     }
 
-    
+
     background-image: linear-gradient(#dcbc8b, #5c4930);
     background-size:cover;
     min-height: 500px;
     height: 100%;
-   
+    width: 100vw; /**/
+
+
     .header {
         display: grid;
         grid-area: header;
         justify-items: center;
         align-content: space-between;
-               
+
 
         .contenedor_sup_bar {
             display: flex;
-            width: 100%;
+            width: 100%;/**/
             height: 50px;
             justify-content: space-between;
             border: 2px solid black;
@@ -86,7 +89,7 @@ body {
             .contenedor_info {
                 display: flex;
                 align-items: center;
-                
+
             }
 
             .contenedor_sesion {
@@ -113,14 +116,14 @@ body {
         #lista {
             height: fit-content;
             background-color: #a18561;
-           
+
 
             .contenedor_lista {
                 display: grid;
                 align-items: center;
                 height: 65px;
-                width: 100vw;
-                               
+                width: 100vw;/**/
+
                 .lista_des {
                     margin: 0;
                     list-style: none;
@@ -199,7 +202,7 @@ body {
         grid-area: aside;
         align-items: center;
         padding: 50px 0;
-    
+
         .aside {
             display: flex;
             height: 90%;
@@ -209,7 +212,7 @@ body {
             align-items: center;
         }
     }
-    
+
 
 }
 
@@ -218,14 +221,64 @@ body {
 /* ----------------- Productos ------------------ */
 
 .body_productos {
-    width: 100%;
+    width: 100vw;
+    height: 200vh;
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 70% auto;
     grid-template-rows: 400px 1fr 300px;
     grid-template-areas:
         "header      header"
-        "formularios formularios"
+        "formularios aside"
         "footer      footer";
+
+    #productos {
+        display: grid;
+        grid-template-rows: repeat(4 auto);
+        margin: 50px 80px;
+        gap: 100px;
+
+        .productos_img {
+            display: flex;
+            border: 2px solid grey;
+            height: 200px;
+            width: max-content;
+            justify-items: space-between;
+            align-items: center;
+            padding: 0 10px;
+            
+            img {
+                height: 150px;
+                width: 150px;
+                background-size: cover;
+            }
+
+            .productos_texto {
+                padding: 0 20px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-items: space-between;
+                align-items: center;
+            }
+        }
+
+    }
+
+    aside {
+        display: grid;
+        grid-area: aside;
+        align-items: center;
+        padding: 50px 0;
+
+        .aside {
+            display: flex;
+            height: 1200px;
+            width: 300px;
+            background-color: rgb(209, 174, 122);
+            justify-content: center;
+            align-items: center;
+        }
+    }
 
 }
 
@@ -233,6 +286,7 @@ body {
 
 .body_qs {
     width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-rows: 400px 1fr 300px;
@@ -431,13 +485,14 @@ body {
             height: fit-content;
             grid-template-columns: repeat(2, max-content);
             justify-content: space-between;
+
             &:target {
                 --state-menu: translate(0);
                 --state-close: scale(1);
                 --state-hamb: scale(0);
             }
 
-            
+
 
             .nav_logo {
                 width: 100px;
@@ -473,7 +528,7 @@ body {
                 }
             }
 
-            
+
 
 
             .nav_hamb,

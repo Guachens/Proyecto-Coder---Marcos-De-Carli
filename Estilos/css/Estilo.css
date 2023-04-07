@@ -9,9 +9,11 @@ body {
   background-size: cover;
   min-height: 500px;
   height: 100%;
+  width: 100vw; /**/
 }
 body .nav {
   display: none;
+  position: absolute; /**/
 }
 body .header {
   display: grid;
@@ -21,7 +23,7 @@ body .header {
 }
 body .header .contenedor_sup_bar {
   display: flex;
-  width: 100%;
+  width: 100%; /**/
   height: 50px;
   justify-content: space-between;
   border: 2px solid black;
@@ -99,7 +101,7 @@ body .header #lista .contenedor_lista {
   display: grid;
   align-items: center;
   height: 65px;
-  width: 100vw;
+  width: 100vw; /**/
 }
 body .header #lista .contenedor_lista .lista_des {
   margin: 0;
@@ -169,16 +171,60 @@ body .header #lista .contenedor_lista .lista_des li a {
 
 /* ----------------- Productos ------------------ */
 .body_productos {
-  width: 100%;
+  width: 100vw;
+  height: 200vh;
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: 70% auto;
   grid-template-rows: 400px 1fr 300px;
-  grid-template-areas: "header      header" "formularios formularios" "footer      footer";
+  grid-template-areas: "header      header" "formularios aside" "footer      footer";
+}
+.body_productos #productos {
+  display: grid;
+  grid-template-rows: repeat(4 auto);
+  margin: 50px 80px;
+  gap: 100px;
+}
+.body_productos #productos .productos_img {
+  display: flex;
+  border: 2px solid grey;
+  height: 200px;
+  width: max-content;
+  justify-items: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.body_productos #productos .productos_img img {
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+}
+.body_productos #productos .productos_img .productos_texto {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: space-between;
+  align-items: center;
+}
+.body_productos aside {
+  display: grid;
+  grid-area: aside;
+  align-items: center;
+  padding: 50px 0;
+}
+.body_productos aside .aside {
+  display: flex;
+  height: 1200px;
+  width: 300px;
+  background-color: rgb(209, 174, 122);
+  justify-content: center;
+  align-items: center;
 }
 
 /* ----------------- Quienes Somos ---------------*/
 .body_qs {
   width: 100%;
+  height: 100vh;
   display: grid;
   grid-template-columns: 50% auto;
   grid-template-rows: 400px 1fr 300px;
