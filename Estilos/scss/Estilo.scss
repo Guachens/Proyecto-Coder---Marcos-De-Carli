@@ -7,7 +7,8 @@
 body {
     .nav {
         display: none;
-        position: absolute; /**/
+        position: absolute;
+        /**/
     }
 
 
@@ -15,7 +16,8 @@ body {
     background-size:cover;
     min-height: 500px;
     height: 100%;
-    width: 100vw; /**/
+    width: 100vw;
+    /**/
 
 
     .header {
@@ -27,7 +29,8 @@ body {
 
         .contenedor_sup_bar {
             display: flex;
-            width: 100%;/**/
+            width: 100%;
+            /**/
             height: 50px;
             justify-content: space-between;
             border: 2px solid black;
@@ -116,13 +119,16 @@ body {
         #lista {
             height: fit-content;
             background-color: #a18561;
+            border: #fff 2px;
+            border-style: ridge;
 
 
             .contenedor_lista {
                 display: grid;
                 align-items: center;
                 height: 65px;
-                width: 100vw;/**/
+                width: 100vw;
+                /**/
 
                 .lista_des {
                     margin: 0;
@@ -233,19 +239,20 @@ body {
 
     #productos {
         display: grid;
-        grid-template-rows: repeat(4 auto);
+        grid-template-columns: auto auto;
         margin: 50px 80px;
         gap: 100px;
 
         .productos_img {
-            display: flex;
+            display: grid;
+            grid-template-columns: 200px 1fr;
             border: 2px solid grey;
             height: 200px;
+            min-width: 800px;
             width: max-content;
-            justify-items: space-between;
             align-items: center;
             padding: 0 10px;
-            
+
             img {
                 height: 150px;
                 width: 150px;
@@ -257,30 +264,41 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
-                justify-items: space-between;
                 align-items: center;
+                height: 100%;
+                justify-content: space-around;
             }
         }
 
+
     }
 
-    aside {
-        display: grid;
-        grid-area: aside;
-        align-items: center;
-        padding: 50px 0;
 
-        .aside {
-            display: flex;
-            height: 1200px;
-            width: 300px;
-            background-color: rgb(209, 174, 122);
-            justify-content: center;
-            align-items: center;
-        }
-    }
+
+
+
 
 }
+
+
+
+aside {
+    display: grid;
+    grid-area: aside;
+    align-items: center;
+    padding: 50px 0;
+
+    .aside {
+        display: flex;
+        height: 1200px;
+        width: 300px;
+        background-color: rgb(209, 174, 122);
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 
 /* ----------------- Quienes Somos ---------------*/
 
