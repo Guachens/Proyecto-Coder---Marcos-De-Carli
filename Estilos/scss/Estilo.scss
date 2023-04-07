@@ -273,30 +273,27 @@ body {
 
     }
 
-
-
-
-
-
-}
-
-
-
-aside {
-    display: grid;
-    grid-area: aside;
-    align-items: center;
-    padding: 50px 0;
-
-    .aside {
-        display: flex;
-        height: 1200px;
-        width: 300px;
-        background-color: rgb(209, 174, 122);
-        justify-content: center;
+    aside {
+        display: grid;
+        grid-area: aside;
         align-items: center;
+        padding: 50px 0;
+    
+        .aside {
+            display: flex;
+            height: 1200px;
+            width: 300px;
+            background-color: rgb(209, 174, 122);
+            justify-content: center;
+            align-items: center;
+        }
     }
+
 }
+
+
+
+
 
 
 
@@ -304,14 +301,48 @@ aside {
 
 .body_qs {
     width: 100%;
-    height: 100vh;
+    height: 180vh;
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: auto;
     grid-template-rows: 400px 1fr 300px;
     grid-template-areas:
-        "header      header"
-        "formularios formularios"
-        "footer      footer";
+        "header"
+        "formularios"
+        "footer";
+        main {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                padding: 40px 0;
+            }
+
+            .nosotros {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                p{
+                    text-align: center;
+                    font-size: 1.5em;
+                }
+            }
+            .video {
+                display: flex;
+                justify-content: center;
+                margin-top: 100px;
+            }
+
+            .nosotros_p_2 {
+                margin-bottom: 100px;
+            }
+
+
+        }
+       
+
+
+
 }
 
 /* --------------------- Contactos --------------------------- */

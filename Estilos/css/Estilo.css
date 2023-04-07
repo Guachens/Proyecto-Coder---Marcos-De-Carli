@@ -214,14 +214,13 @@ body .header #lista .contenedor_lista .lista_des li a {
   height: 100%;
   justify-content: space-around;
 }
-
-aside {
+.body_productos aside {
   display: grid;
   grid-area: aside;
   align-items: center;
   padding: 50px 0;
 }
-aside .aside {
+.body_productos aside .aside {
   display: flex;
   height: 1200px;
   width: 300px;
@@ -233,11 +232,37 @@ aside .aside {
 /* ----------------- Quienes Somos ---------------*/
 .body_qs {
   width: 100%;
-  height: 100vh;
+  height: 180vh;
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: auto;
   grid-template-rows: 400px 1fr 300px;
-  grid-template-areas: "header      header" "formularios formularios" "footer      footer";
+  grid-template-areas: "header" "formularios" "footer";
+}
+.body_qs main {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+.body_qs main h1 {
+  text-align: center;
+  text-decoration: underline;
+  padding: 40px 0;
+}
+.body_qs main .nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.body_qs main .nosotros p {
+  text-align: center;
+  font-size: 1.5em;
+}
+.body_qs main .video {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.body_qs main .nosotros_p_2 {
+  margin-bottom: 100px;
 }
 
 /* --------------------- Contactos --------------------------- */
