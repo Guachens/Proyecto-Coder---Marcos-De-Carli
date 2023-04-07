@@ -11,18 +11,18 @@
     <title>Dof Aromatizantes</title>
 </head>
 
-<body>
-    
+<body class="sesion">
+
     <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <header>
         <div class="contenedor_logo">
             <div class="logo">
-                <img src="../Imagenes/dof logo.jpg" alt="">
+                <a href="../Index.html"><img src="../Imagenes/dof logo.jpg" alt=""></a>
             </div>
         </div>
     </header>
-    <main>
+    <main class="main_sesion">
         <div>
             <h1>Iniciar sesión</h1>
         </div>
@@ -31,21 +31,26 @@
             <form action="">
                 <fieldset class="login">
 
-                    <label for="nombreusuario">Nombre de usuario</label>
-                    <input type="text" id="nombreusuario">
+                    <div>
+                        <label for="nombreusuario">Nombre de usuario</label>
+                        <input type="text" id="nombreusuario">
 
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" id="contraseña">
-
-                    <button type="submit">Ingresar</button>
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" id="contraseña">
+                    </div>
+                    <div class="boton">
+                        <button type="submit">Ingresar</button>
+                    </div>
+                   
                 </fieldset>
             </form>
         </div>
-        
-        <div>
+
+        <div class="registrarte">
             <a href="">Registrate</a>
         </div>
 
     </main>
 </body>
+
 </html>

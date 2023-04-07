@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
   height: 100%;
   width: 100vw;
   /**/
+  /* -------------------------------- Header ----------------------- */
 }
 body .nav {
   display: none;
@@ -315,6 +317,57 @@ body .header #lista .contenedor_lista .lista_des li a {
   display: flex;
   justify-content: center;
   margin-top: 80px;
+}
+
+/* -------------- Inicio de sesión ----------------- */
+.sesion {
+  display: grid;
+  grid-template-rows: 300px 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+.sesion header {
+  display: grid;
+  justify-content: center;
+}
+.sesion header .contenedor_logo {
+  margin: 50px auto;
+}
+.sesion .main_sesion {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.sesion .main_sesion #login {
+  height: 90%;
+  width: 400px;
+  border: #333 2px solid;
+}
+.sesion .main_sesion #login .login div {
+  font-size: 20px;
+  text-decoration: underline;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 50px 20px;
+  gap: 10px;
+}
+.sesion .main_sesion #login .login .boton {
+  display: flex;
+  align-items: center;
+}
+.sesion .main_sesion #login .login .boton button {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.sesion .main_sesion .registrarte {
+  display: flex;
+  justify-content: end;
+}
+.sesion .main_sesion .registrarte a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* ------------------ Footer ----------------*/

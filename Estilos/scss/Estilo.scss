@@ -19,6 +19,7 @@ body {
     width: 100vw;
     /**/
 
+    /* -------------------------------- Header ----------------------- */
 
     .header {
         display: grid;
@@ -278,7 +279,7 @@ body {
         grid-area: aside;
         align-items: center;
         padding: 50px 0;
-    
+
         .aside {
             display: flex;
             height: 1200px;
@@ -309,37 +310,41 @@ body {
         "header"
         "formularios"
         "footer";
-        main {
-            display: grid;
-            grid-template-rows: auto auto 1fr auto;
-            h1{
-                text-align: center;
-                text-decoration: underline;
-                padding: 40px 0;
-            }
 
-            .nosotros {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                p{
-                    text-align: center;
-                    font-size: 1.5em;
-                }
-            }
-            .video {
-                display: flex;
-                justify-content: center;
-                margin-top: 100px;
-            }
+    main {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
 
-            .nosotros_p_2 {
-                margin-bottom: 100px;
-            }
-
-
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            padding: 40px 0;
         }
-       
+
+        .nosotros {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            p {
+                text-align: center;
+                font-size: 1.5em;
+            }
+        }
+
+        .video {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .nosotros_p_2 {
+            margin-bottom: 100px;
+        }
+
+
+    }
+
 
 
 
@@ -410,6 +415,71 @@ body {
     }
 }
 
+/* -------------- Inicio de sesión ----------------- */
+
+.sesion {
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    width: 100vw;
+    height: 100vh;
+
+    header {
+        display: grid;
+        justify-content: center;
+
+        .contenedor_logo {
+            margin: 50px auto;
+        }
+
+    }
+
+    .main_sesion {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        #login {
+            height: 90%;
+            width: 400px;
+            border: #333 2px solid;
+
+            .login {
+
+                div {
+                    font-size: 20px;
+                    text-decoration: underline;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+
+                    padding: 50px 20px;
+                    gap: 10px;
+                }
+
+                .boton {
+                    display: flex;
+                    align-items: center;
+
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        padding: 5px;
+                    }
+                }
+
+            }
+        }
+
+        .registrarte {
+            display: flex;
+            justify-content: end;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
 
 /* ------------------ Footer ----------------*/
 
