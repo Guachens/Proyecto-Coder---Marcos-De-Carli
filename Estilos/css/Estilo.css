@@ -16,7 +16,6 @@ body {
 }
 body .nav {
   display: none;
-  position: absolute;
   /**/
 }
 body .header {
@@ -27,7 +26,7 @@ body .header {
 }
 body .header .contenedor_sup_bar {
   display: flex;
-  width: 100%;
+  width: 100vw;
   /**/
   height: 50px;
   justify-content: space-between;
@@ -180,7 +179,6 @@ body .header #lista .contenedor_lista .lista_des li a {
 /* ----------------- Productos ------------------ */
 .body_productos {
   width: 100vw;
-  height: 200vh;
   display: grid;
   grid-template-columns: 70% auto;
   grid-template-rows: 400px 1fr 300px;
@@ -188,7 +186,9 @@ body .header #lista .contenedor_lista .lista_des li a {
 }
 .body_productos #productos {
   display: grid;
+  grid-area: formularios;
   grid-template-columns: auto auto;
+  grid-template-rows: auto;
   margin: 50px 80px;
   gap: 100px;
 }
@@ -216,13 +216,17 @@ body .header #lista .contenedor_lista .lista_des li a {
   height: 100%;
   justify-content: space-around;
 }
+.body_productos #productos .fragancias {
+  display: grid;
+  grid: frag;
+}
 .body_productos aside {
   display: grid;
   grid-area: aside;
-  align-items: center;
+  justify-content: center;
   padding: 50px 0;
 }
-.body_productos aside .aside {
+.body_productos aside .prod_aside {
   display: flex;
   height: 1200px;
   width: 300px;
@@ -269,8 +273,7 @@ body .header #lista .contenedor_lista .lista_des li a {
 
 /* --------------------- Contactos --------------------------- */
 .body_contactos {
-  width: 100%;
-  height: 180vh;
+  height: 200vh;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 400px 1fr 300px;
@@ -320,30 +323,30 @@ body .header #lista .contenedor_lista .lista_des li a {
 }
 
 /* -------------- Inicio de sesión ----------------- */
-.sesion {
+#sesion {
   display: grid;
   grid-template-rows: 300px 1fr;
   width: 100vw;
   height: 100vh;
 }
-.sesion header {
+#sesion header {
   display: grid;
   justify-content: center;
 }
-.sesion header .contenedor_logo {
+#sesion header .contenedor_logo {
   margin: 50px auto;
 }
-.sesion .main_sesion {
+#sesion .main_sesion {
   display: grid;
   justify-content: center;
   align-items: center;
 }
-.sesion .main_sesion #login {
+#sesion .main_sesion #login {
   height: 90%;
   width: 400px;
   border: #333 2px solid;
 }
-.sesion .main_sesion #login .login div {
+#sesion .main_sesion #login .login div {
   font-size: 20px;
   text-decoration: underline;
   display: flex;
@@ -352,20 +355,20 @@ body .header #lista .contenedor_lista .lista_des li a {
   padding: 50px 20px;
   gap: 10px;
 }
-.sesion .main_sesion #login .login .boton {
+#sesion .main_sesion #login .login .boton {
   display: flex;
   align-items: center;
 }
-.sesion .main_sesion #login .login .boton button {
+#sesion .main_sesion #login .login .boton button {
   display: flex;
   justify-content: center;
   padding: 5px;
 }
-.sesion .main_sesion .registrarte {
+#sesion .main_sesion .registrarte {
   display: flex;
   justify-content: end;
 }
-.sesion .main_sesion .registrarte a {
+#sesion .main_sesion .registrarte a {
   text-decoration: none;
   color: #fff;
 }
@@ -409,6 +412,29 @@ body .header #lista .contenedor_lista .lista_des li a {
 }
 
 /*-------------- Responsive --------------- */
+@media screen and (max-width: 1550px) and (min-width: 1200px) {
+  .body_productos {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 400px 1fr 350px 300px;
+    grid-template-areas: "header      header" "formularios formularios" "aside       aside" "footer      footer";
+  }
+  .body_productos aside {
+    display: grid;
+    grid-area: aside;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .body_productos aside .prod_aside {
+    display: flex;
+    height: 250px;
+    width: 1000px;
+    margin: 20px 0;
+    background-color: rgb(209, 174, 122);
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 1200px) {
   /* Index */
   .body_index {
@@ -472,7 +498,7 @@ body .header #lista .contenedor_lista .lista_des li a {
   }
   body .nav .nav_links {
     background-color: #dcbc8b;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -482,7 +508,7 @@ body .header #lista .contenedor_lista .lista_des li a {
     align-content: center;
     gap: 2em;
     padding-left: 5%;
-    height: 100vh;
+    height: 100%;
     transform: var(--state-menu);
     transition: 0.3s transform;
   }
@@ -513,6 +539,64 @@ body .header #lista .contenedor_lista .lista_des li a {
   }
   body .nav .nav_close .nav_icon {
     width: 40px;
+  }
+  .body_productos {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 1fr 350px 300px;
+    grid-template-areas: "header      header" "formularios formularios" "aside       aside" "footer      footer";
+  }
+  .body_productos .nav {
+    display: grid;
+    grid-area: header;
+  }
+  .body_productos #productos {
+    display: grid;
+    grid-area: formularios;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin: 20px 40px;
+    gap: 20px;
+  }
+  .body_productos #productos .productos_img {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border: 2px solid grey;
+    height: 150px;
+    min-width: 600px;
+    width: max-content;
+    align-items: center;
+    padding: 0 5px;
+  }
+  .body_productos #productos .productos_img img {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+  }
+  .body_productos #productos .productos_img .productos_texto {
+    padding: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+  }
+  .body_productos aside {
+    display: grid;
+    grid-area: aside;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .body_productos aside .prod_aside {
+    display: flex;
+    height: 150px;
+    width: 150;
+    margin: 20px 0;
+    background-color: rgb(209, 174, 122);
+    justify-content: center;
+    align-items: center;
   }
 }
 
